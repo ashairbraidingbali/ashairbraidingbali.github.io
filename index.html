@@ -1,168 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional hair braiding in Bali. Stylish, clean and custom braids for holidays, events and everyday looks.">
-<title>A’S HAIR BRAIDING BALI — Hair Braiding Bali</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A'S Hair Braiding Bali — professional hair braiding in Bali.">
+<title>A'S Hair Braiding Bali</title>
 <style>
-:root{
-  --bg:#f7f2eb; --ink:#201b18; --muted:#746a63; --card:#fffaf4;
-  --accent:#8b5e3c; --accent2:#d8b08a; --line:#e7ddd3;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1100px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(247,242,235,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:22px;font-weight:900;letter-spacing:3px}
-.navlinks{display:flex;gap:25px;font-size:14px}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 20px;background:
-linear-gradient(rgba(25,20,17,.45),rgba(25,20,17,.45)),
-url('images/hero.jpg') center/cover}
-.hero h1{font-size:clamp(44px,9vw,92px);line-height:.95;color:white;letter-spacing:-3px}
-.hero p{color:white;font-size:19px;max-width:650px;margin:25px auto}
-.btn{display:inline-block;background:var(--accent);color:white;padding:15px 24px;border-radius:999px;font-weight:700;transition:.2s}
-.btn:hover{transform:translateY(-2px);background:#70482e}
-.btn.light{background:white;color:var(--ink)}
-section{padding:85px 0}
-.kicker{text-transform:uppercase;letter-spacing:3px;font-size:12px;color:var(--accent);font-weight:800}
-h2{font-size:clamp(32px,5vw,52px);margin:8px 0 35px;line-height:1.05}
-.intro{max-width:650px;color:var(--muted);font-size:17px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);padding:28px;border:1px solid var(--line);border-radius:22px}
-.card h3{margin-bottom:8px}
-.card p{color:var(--muted);font-size:14px}
-.price{margin-top:20px;font-size:18px;font-weight:800;color:var(--accent)}
-.price small{font-weight:500;color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;background:#e9ded2}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.aboutbox{background:var(--ink);color:white;border-radius:28px;padding:45px}
-.aboutbox p{color:#ddd;margin-top:15px}
-.booking{background:var(--accent);color:white;text-align:center;border-radius:30px;padding:65px 25px}
-.booking p{max-width:600px;margin:0 auto 25px;color:#f6e9de}
-footer{padding:35px 0;color:var(--muted);font-size:13px}
-.floatwa{position:fixed;right:20px;bottom:20px;z-index:30;background:#25D366;color:white;border-radius:999px;padding:15px 20px;font-weight:800;box-shadow:0 8px 25px #0002}
-@media(max-width:760px){
- .navlinks{display:none}
- .hero{min-height:72vh}
- .grid,.gallery,.about{grid-template-columns:1fr}
- section{padding:65px 0}
- .aboutbox{padding:30px}
-}
-</style>
-</head>
+:root{--cream:#f7f1e9;--brown:#9a6841;--dark:#201a17;--muted:#756b64}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream)}
+header{position:sticky;top:0;z-index:10;background:#f7f1e9;border-bottom:1px solid #e4d9ce}.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-weight:800;letter-spacing:3px;font-size:20px}.logo span{display:block}nav a{color:var(--dark);text-decoration:none;margin:0 12px;font-weight:700;font-size:14px}
+.btn{display:inline-block;background:var(--brown);color:#fff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:800}
+.hero{min-height:76vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;background:linear-gradient(135deg,#aaa39d,#817a74);color:#fff}.hero-inner{max-width:850px}
+.eyebrow{letter-spacing:4px;font-weight:700;color:#f7e5d5;font-size:14px}h1{font-size:clamp(44px,9vw,88px);line-height:.95;margin:20px 0;text-transform:uppercase}.hero p{font-size:clamp(19px,3vw,27px);line-height:1.5;margin:0 auto 32px}
+section{max-width:1100px;margin:auto;padding:70px 20px}.section-title{text-align:center;font-size:clamp(32px,5vw,50px);margin:0 0 12px}.section-sub{text-align:center;color:var(--muted);font-size:18px;line-height:1.6;max-width:720px;margin:0 auto 38px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 28px #00000012}.card img{display:block;width:100%;height:360px;object-fit:cover}.caption{padding:17px 20px;font-weight:800}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price{background:#fff;border-radius:18px;padding:25px;text-align:center;border:1px solid #e5d9ce}.price h3{font-size:22px}.price strong{font-size:25px;color:var(--brown)}.price p{color:var(--muted);line-height:1.5}
+.cta{max-width:none;background:var(--dark);color:#fff;text-align:center}.cta-inner{max-width:850px;margin:auto}.cta .section-sub{color:#ddd}footer{padding:28px 20px;text-align:center;background:#171310;color:#eee}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:#fff;text-decoration:none;padding:17px 23px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #0004}
+@media(max-width:760px){nav{display:none}.gallery,.prices{grid-template-columns:1fr}.card img{height:330px}.nav{padding:15px 16px}.logo{font-size:18px}section{padding:58px 17px}}
+</style></head>
 <body>
-
-<nav>
-  <div class="container navin">
-    <a class="logo" href="#">A’S HAIR BRAIDING BALI</a>
-    <div class="navlinks">
-      <a href="#services">Services</a>
-      <a href="#prices">Prices</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a class="btn" style="padding:10px 17px;font-size:13px" href="https://wa.me/6287863292497?text=Hi%20I%27d%20like%20to%20book%20a%20hair%20braiding%20appointment." target="_blank">BOOK NOW</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div>
-    <div class="kicker" style="color:#f2d5bb">Professional Hair Braiding • Bali</div>
-    <h1>YOUR STYLE.<br>YOUR BRAIDS.</h1>
-    <p>Professional, stylish and custom hair braiding for holidays, events and everyday looks.</p>
-    <a class="btn light" href="https://wa.me/6287863292497?text=Hi%20I%27d%20like%20to%20book%20a%20hair%20braiding%20appointment." target="_blank">💬 BOOK VIA WHATSAPP</a>
-  </div>
-</header>
-
-<section id="services">
-<div class="container">
-  <div class="kicker">What we do</div>
-  <h2>Our Services</h2>
-  <p class="intro">From clean and classic to bold and creative, choose a style that feels like you.</p>
-  <div class="grid" style="margin-top:35px">
-    <div class="card"><h3>Classic Braids</h3><p>Simple, clean and timeless.</p></div>
-    <div class="card"><h3>Box Braids</h3><p>Stylish, versatile and perfect for everyday wear.</p></div>
-    <div class="card"><h3>Cornrows</h3><p>Sleek, detailed and effortlessly cool.</p></div>
-    <div class="card"><h3>Boho Braids</h3><p>Relaxed, trendy braids with a beautiful touch.</p></div>
-    <div class="card"><h3>Fulani Braids</h3><p>Traditional-inspired style with a modern twist.</p></div>
-    <div class="card"><h3>Custom Braids</h3><p>Bring your reference and let's create your look.</p></div>
-  </div>
-</div>
-</section>
-
-<section id="prices">
-<div class="container">
-  <div class="kicker">Simple & transparent</div>
-  <h2>Price List</h2>
-  <div class="grid">
-    <div class="card"><h3>Classic Braids</h3><div class="price">From IDR XXX</div></div>
-    <div class="card"><h3>Box Braids</h3><div class="price">From IDR XXX</div></div>
-    <div class="card"><h3>Cornrows</h3><div class="price">From IDR XXX</div></div>
-    <div class="card"><h3>Boho Braids</h3><div class="price">From IDR XXX</div></div>
-    <div class="card"><h3>Fulani Braids</h3><div class="price">From IDR XXX</div></div>
-    <div class="card"><h3>Custom Style</h3><div class="price">Price on request</div></div>
-  </div>
-  <p class="intro" style="margin-top:20px;font-size:13px">Prices may vary depending on hair length, thickness, style and additional hair.</p>
-</div>
-</section>
-
-<section id="gallery">
-<div class="container">
-  <div class="kicker">Our work</div>
-  <h2>Gallery</h2>
-  <p class="intro">Replace the sample images below with your own best braid photos.</p>
-  <div class="gallery" style="margin-top:30px">
-    <img src="images/braid-1.jpg" alt="Hair braiding style 1">
-    <img src="images/braid-2.jpg" alt="Hair braiding style 2">
-    <img src="images/braid-3.jpg" alt="Hair braiding style 3">
-    <img src="images/braid-4.jpg" alt="Hair braiding style 4">
-    <img src="images/braid-5.jpg" alt="Hair braiding style 5">
-    <img src="images/braid-6.jpg" alt="Hair braiding style 6">
-  </div>
-</div>
-</section>
-
-<section>
-<div class="container about">
-  <div>
-    <div class="kicker">About us</div>
-    <h2>Beautiful braids, made for you.</h2>
-    <p class="intro">We create detailed, stylish braids tailored to your personality and your plans. Whether you're visiting Bali, getting ready for an event, or simply want a fresh new look, we're here to make your hair feel special.</p>
-  </div>
-  <div class="aboutbox">
-    <h3>Why choose us?</h3>
-    <p>✓ Clean & detailed braiding</p>
-    <p>✓ Custom styles</p>
-    <p>✓ Friendly service</p>
-    <p>✓ Holiday & event ready</p>
-  </div>
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-  <div class="booking">
-    <div class="kicker" style="color:#f2d5bb">Ready for a new look?</div>
-    <h2>Let's create your perfect braids.</h2>
-    <p>Message us on WhatsApp to check availability and book your appointment.</p>
-    <a class="btn light" href="https://wa.me/6287863292497?text=Hi%20I%27d%20like%20to%20book%20a%20hair%20braiding%20appointment." target="_blank">💬 BOOK NOW ON WHATSAPP</a>
-    <p style="margin-top:20px;margin-bottom:0">Instagram: @ashairbraidingbali</p>
-  </div>
-</div>
-</section>
-
-<footer>
-<div class="container">
-  © 2026 A’S HAIR BRAIDING BALI — Hair Braiding Bali. All rights reserved.
-</div>
-</footer>
-
-<a class="floatwa" href="https://wa.me/6287863292497?text=Hi%20I%27d%20like%20to%20book%20a%20hair%20braiding%20appointment." target="_blank">WhatsApp</a>
-
-</body>
-</html>
+<header><div class="nav">
+<div class="logo"><span>A'S HAIR</span><span>BRAIDING BALI</span></div>
+<nav><a href="#gallery">Gallery</a><a href="#prices">Prices</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="https://wa.me/6287863292497?text=Hello%20A%27S%20Hair%20Braiding%20Bali%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">BOOK NOW</a>
+</div></header>
+<main>
+<section class="hero"><div class="hero-inner">
+<div class="eyebrow">PROFESSIONAL HAIR BRAIDING • BALI</div>
+<h1>Your Style.<br>Your Braids.</h1>
+<p>Professional, stylish and custom hair braiding for holidays, events and everyday looks.</p>
+<a class="btn" href="https://wa.me/6287863292497?text=Hello%20A%27S%20Hair%20Braiding%20Bali%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">BOOK VIA WHATSAPP</a>
+</div></section>
+<section id="gallery"><h2 class="section-title">Braiding Gallery</h2>
+<p class="section-sub">Explore colorful, playful and beach-ready braid styles. Choose your favorite look and message us for availability.</p>
+<div class="gallery">
+<div class="card"><img src="braid-pink-glitter.jpeg" alt="Pink and purple braided hairstyle"><div class="caption">Pink &amp; Purple Glam Braids</div></div>
+<div class="card"><img src="braid-pink-box.jpeg" alt="Long pink box braids"><div class="caption">Bold Pink Box Braids</div></div>
+<div class="card"><img src="braid-purple-gold.jpeg" alt="Purple and gold braids"><div class="caption">Purple &amp; Gold Braids</div></div>
+<div class="card"><img src="braid-colorful-beads.jpeg" alt="Colorful mini braids with beads"><div class="caption">Colorful Beaded Braids</div></div>
+<div class="card"><img src="braid-boho-shells.jpeg" alt="Boho braids with shells and flowers"><div class="caption">Boho Beach Braids</div></div>
+</div></section>
+<section id="prices"><h2 class="section-title">Our Services</h2>
+<p class="section-sub">Prices can vary by length, thickness, extensions and accessories. Contact us for an exact quote.</p>
+<div class="prices">
+<div class="price"><h3>Simple Braids</h3><strong>From IDR 150K</strong><p>Clean, stylish braids for everyday looks.</p></div>
+<div class="price"><h3>Box / Cornrow Braids</h3><strong>From IDR 250K</strong><p>Custom patterns and colorful extensions available.</p></div>
+<div class="price"><h3>Boho / Special Style</h3><strong>From IDR 350K</strong><p>Beach, holiday, bridal and event-ready styles.</p></div>
+</div></section>
+<section id="contact" class="cta"><div class="cta-inner"><h2 class="section-title">Ready for your new look?</h2>
+<p class="section-sub">Send us a WhatsApp message with your preferred style, date and approximate hair length.</p>
+<a class="btn" href="https://wa.me/6287863292497?text=Hello%20A%27S%20Hair%20Braiding%20Bali%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">WHATSAPP US</a>
+</div></section></main>
+<footer>A'S Hair Braiding Bali • Bali, Indonesia</footer>
+<a class="whatsapp" href="https://wa.me/6287863292497?text=Hello%20A%27S%20Hair%20Braiding%20Bali%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">WhatsApp</a>
+</body></html>
